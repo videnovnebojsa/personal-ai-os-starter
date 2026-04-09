@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Bash(mkdir *)",
+      "Bash(ls *)"
+    ]
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/claude-code-notifier.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
